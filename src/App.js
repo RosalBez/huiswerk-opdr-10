@@ -6,9 +6,10 @@ import bag_1 from "./assets/bag_1.png"
 import bag_2 from "./assets/bag_2.png"
 import bag_3 from "./assets/bag_3.png"
 import bag_4 from "./assets/bag_4.png"
-import Tiles from  "./assets/components/tiles/Tiles"
+import Tiles from "./assets/components/tiles/Tiles"
 import brand from "./assets/brand.png"
-import our_story from "./assets/our_story.png"
+import ourStory from "./assets/our_story.png"
+
 
 function App() {
     return (
@@ -34,10 +35,10 @@ function App() {
             </nav>
             <main>
                 <Article
-                label="Best seller"
-                image={bag_1}
-                title="the handy bag"
-                price="€400,-"
+                    label="Best seller"
+                    image={bag_1}
+                    title="the handy bag"
+                    price="€400,-"
                 />
 
                 <Article
@@ -63,11 +64,28 @@ function App() {
 
             </main>
             <footer>
-                <Tiles
-                    title="Our Brand"
-                    image={brand}
-                    />
+                <Tiles>
+                    <h2>Our Brand</h2>
+                    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap into electronic typesetting</p>
+                </Tiles>
+                <Tiles>
+                    <img src={brand}/>
+                </Tiles>
+                <Tiles>
+                    <img src={ourStory}/>
 
+                </Tiles>
+                <Tiles>
+                    <h2>Our Story</h2>
+                    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                        and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                        leap into electronic typesetting</p>
+
+                </Tiles>
             </footer>
 
         </>

@@ -1,14 +1,12 @@
 import React from 'react';
 
-function Tiles({title, image, children}) {
+function Tiles(props) {
     return (
         <section>
-            <h2> {title}</h2>
-            <img src={image} alt={title} />
-        >
-            {children}
+            {props.children}
         </section>
-    );
+    )
 }
+
 
 export default Tiles;
